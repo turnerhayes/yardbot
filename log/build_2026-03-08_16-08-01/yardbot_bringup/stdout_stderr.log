@@ -1,0 +1,7 @@
+running egg_info
+writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt
+writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+error: package directory 'yardbot_bringup' does not exist

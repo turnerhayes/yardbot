@@ -1,0 +1,12 @@
+package.xml
+setup.py
+../../build/yardbot_description/yardbot_description.egg-info/PKG-INFO
+../../build/yardbot_description/yardbot_description.egg-info/SOURCES.txt
+../../build/yardbot_description/yardbot_description.egg-info/dependency_links.txt
+../../build/yardbot_description/yardbot_description.egg-info/requires.txt
+../../build/yardbot_description/yardbot_description.egg-info/top_level.txt
+../../build/yardbot_description/yardbot_description.egg-info/zip-safe
+launch/robot_description.launch.py
+resource/yardbot_description
+urdf/yardbot.urdf.xacro
+yardbot_description/__init__.py

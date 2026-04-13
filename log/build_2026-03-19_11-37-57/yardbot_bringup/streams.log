@@ -1,0 +1,26 @@
+[0.800s] Invoking command in '/home/turner/yardbot_ws/src/yardbot_bringup': AMENT_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_description/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data
+[1.007s] running egg_info
+[1.023s] writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+[1.023s] writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+[1.023s] writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt
+[1.023s] writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+[1.023s] writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+[1.054s] reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[1.055s] writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[1.055s] running build
+[1.055s] running build_py
+[1.055s] copying yardbot_bringup/apriltag_overlay_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+[1.055s] running install
+[1.061s] running install_lib
+[1.076s] copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/apriltag_overlay_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+[1.076s] byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/apriltag_overlay_node.py to apriltag_overlay_node.cpython-312.pyc
+[1.078s] running install_data
+[1.078s] running install_egg_info
+[1.094s] removing '/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info' (and everything under it)
+[1.094s] Copying ../../build/yardbot_bringup/yardbot_bringup.egg-info to /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info
+[1.095s] running install_scripts
+[1.206s] Installing apriltag_overlay script to /home/turner/yardbot_ws/install/yardbot_bringup/lib/yardbot_bringup
+[1.206s] Installing depth_to_grid script to /home/turner/yardbot_ws/install/yardbot_bringup/lib/yardbot_bringup
+[1.207s] Installing qos_relay script to /home/turner/yardbot_ws/install/yardbot_bringup/lib/yardbot_bringup
+[1.207s] writing list of installed files to '/home/turner/yardbot_ws/build/yardbot_bringup/install.log'
+[1.245s] Invoked command in '/home/turner/yardbot_ws/src/yardbot_bringup' returned '0': AMENT_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_description/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data

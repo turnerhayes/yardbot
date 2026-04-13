@@ -1,0 +1,60 @@
+[0.000000] (-) TimerEvent: {}
+[0.000093] (-) JobUnselected: {'identifier': 'yardbot_description'}
+[0.000137] (yardbot_bringup) JobQueued: {'identifier': 'yardbot_bringup', 'dependencies': OrderedDict({'yardbot_description': '/home/turner/yardbot_ws/install/yardbot_description'})}
+[0.000177] (yardbot_bringup) JobStarted: {'identifier': 'yardbot_bringup'}
+[0.099343] (-) TimerEvent: {}
+[0.199524] (-) TimerEvent: {}
+[0.299706] (-) TimerEvent: {}
+[0.399909] (-) TimerEvent: {}
+[0.500126] (-) TimerEvent: {}
+[0.581417] (yardbot_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/yardbot_bringup', 'build', '--build-base', '/home/turner/yardbot_ws/build/yardbot_bringup/build', 'install', '--record', '/home/turner/yardbot_ws/build/yardbot_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/turner/yardbot_ws/src/yardbot_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/turner', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'USER': 'turner', 'SSH_CLIENT': '192.168.86.105 57934 22', 'CLAUDE_CODE_ENTRYPOINT': 'claude-vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/turner/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'GIT_EDITOR': 'true', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'tty', 'CLAUDE_AGENT_SDK_VERSION': '0.2.71', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/turner/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/turner', 'CYCLONEDDS_URI': '/home/turner/cyclonedds.xml', 'VSCODE_RECONNECTION_GRACE_TIME': '10800000', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-d842cc68-b657-4eb6-9543-ec746d5fe655.sock', 'ROS_PYTHON_VERSION': '3', 'ROS_STATIC_PEERS': '172.17.200.176', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'VSCODE_L10N_BUNDLE_LOCATION': '', 'COLCON_PREFIX_PATH': '/home/turner/yardbot_ws/install', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'turner', 'VSCODE_HANDLES_SIGPIPE': 'true', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'XDG_SESSION_ID': '2708', 'OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE': 'delta', 'VSCODE_CLI_REQUIRE_TOKEN': '19cc3cd8-0625-46fb-ba20-0ca083a0efbc', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/home/turner/yardbot_ws/.venv/bin:/home/turner/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/home/turner/fastdds_unicast.xml', 'VSCODE_AGENT_FOLDER': '/home/turner/.vscode-server', 'COREPACK_ENABLE_AUTO_PIN': '0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': '', 'ROS_DOMAIN_ID': '0', 'AMENT_PREFIX_PATH': '/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'ELECTRON_RUN_AS_NODE': '1', 'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING': 'true', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CLAUDECODE': '1', 'VIRTUAL_ENV': '/home/turner/yardbot_ws/.venv', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/turner/yardbot_ws/build/yardbot_bringup', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.86.105 57934 192.168.86.100 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_description/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[0.600231] (-) TimerEvent: {}
+[0.700419] (-) TimerEvent: {}
+[0.767437] (yardbot_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[0.767910] (yardbot_bringup) StdoutLine: {'line': b'creating ../../build/yardbot_bringup/yardbot_bringup.egg-info\n'}
+[0.780636] (yardbot_bringup) StdoutLine: {'line': b'writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO\n'}
+[0.780958] (yardbot_bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt\n'}
+[0.781328] (yardbot_bringup) StdoutLine: {'line': b'writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt\n'}
+[0.781495] (yardbot_bringup) StdoutLine: {'line': b'writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt\n'}
+[0.781658] (yardbot_bringup) StdoutLine: {'line': b'writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt\n'}
+[0.781794] (yardbot_bringup) StdoutLine: {'line': b"writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'\n"}
+[0.800517] (-) TimerEvent: {}
+[0.807818] (yardbot_bringup) StdoutLine: {'line': b"reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'\n"}
+[0.808263] (yardbot_bringup) StdoutLine: {'line': b"writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'\n"}
+[0.808516] (yardbot_bringup) StdoutLine: {'line': b'running build\n'}
+[0.808784] (yardbot_bringup) StdoutLine: {'line': b'running build_py\n'}
+[0.808886] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/build/yardbot_bringup/build\n'}
+[0.808991] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/build/yardbot_bringup/build/lib\n'}
+[0.809049] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup\n'}
+[0.809096] (yardbot_bringup) StdoutLine: {'line': b'copying yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup\n'}
+[0.809143] (yardbot_bringup) StdoutLine: {'line': b'copying yardbot_bringup/__init__.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup\n'}
+[0.809190] (yardbot_bringup) StdoutLine: {'line': b'copying yardbot_bringup/qos_relay_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup\n'}
+[0.809235] (yardbot_bringup) StdoutLine: {'line': b'running install\n'}
+[0.813339] (yardbot_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[0.827483] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup\n'}
+[0.827854] (yardbot_bringup) StdoutLine: {'line': b'copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup\n'}
+[0.827965] (yardbot_bringup) StdoutLine: {'line': b'copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/__init__.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup\n'}
+[0.828060] (yardbot_bringup) StdoutLine: {'line': b'copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/qos_relay_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup\n'}
+[0.828263] (yardbot_bringup) StdoutLine: {'line': b'byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/depth_to_grid_node.py to depth_to_grid_node.cpython-312.pyc\n'}
+[0.829745] (yardbot_bringup) StdoutLine: {'line': b'byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/__init__.py to __init__.cpython-312.pyc\n'}
+[0.829882] (yardbot_bringup) StdoutLine: {'line': b'byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/qos_relay_node.py to qos_relay_node.cpython-312.pyc\n'}
+[0.830296] (yardbot_bringup) StdoutLine: {'line': b'running install_data\n'}
+[0.830484] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index\n'}
+[0.830708] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index\n'}
+[0.830982] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index/packages\n'}
+[0.831118] (yardbot_bringup) StdoutLine: {'line': b'copying resource/yardbot_bringup -> /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index/packages\n'}
+[0.831212] (yardbot_bringup) StdoutLine: {'line': b'copying package.xml -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup\n'}
+[0.831305] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/launch\n'}
+[0.831356] (yardbot_bringup) StdoutLine: {'line': b'copying launch/tags_bringup.launch.py -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/launch\n'}
+[0.831402] (yardbot_bringup) StdoutLine: {'line': b'creating /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/config\n'}
+[0.831448] (yardbot_bringup) StdoutLine: {'line': b'copying config/apriltag_qos.yaml -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/config\n'}
+[0.831491] (yardbot_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.845994] (yardbot_bringup) StdoutLine: {'line': b'Copying ../../build/yardbot_bringup/yardbot_bringup.egg-info to /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info\n'}
+[0.846741] (yardbot_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[0.900629] (-) TimerEvent: {}
+[0.943848] (yardbot_bringup) StdoutLine: {'line': b'Installing depth_to_grid script to /home/turner/yardbot_ws/install/yardbot_bringup/lib/yardbot_bringup\n'}
+[0.944226] (yardbot_bringup) StdoutLine: {'line': b'Installing qos_relay script to /home/turner/yardbot_ws/install/yardbot_bringup/lib/yardbot_bringup\n'}
+[0.944355] (yardbot_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/turner/yardbot_ws/build/yardbot_bringup/install.log'\n"}
+[0.963415] (yardbot_bringup) CommandEnded: {'returncode': 0}
+[0.970313] (yardbot_bringup) JobEnded: {'identifier': 'yardbot_bringup', 'rc': 0}
+[0.970757] (-) EventReactorShutdown: {}

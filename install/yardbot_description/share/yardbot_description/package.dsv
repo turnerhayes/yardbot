@@ -1,0 +1,9 @@
+source;share/yardbot_description/hook/cmake_prefix_path.ps1
+source;share/yardbot_description/hook/cmake_prefix_path.dsv
+source;share/yardbot_description/hook/cmake_prefix_path.sh
+source;share/yardbot_description/hook/pythonpath.ps1
+source;share/yardbot_description/hook/pythonpath.dsv
+source;share/yardbot_description/hook/pythonpath.sh
+source;share/yardbot_description/hook/ament_prefix_path.ps1
+source;share/yardbot_description/hook/ament_prefix_path.dsv
+source;share/yardbot_description/hook/ament_prefix_path.sh

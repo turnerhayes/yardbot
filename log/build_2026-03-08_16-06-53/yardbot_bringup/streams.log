@@ -1,0 +1,34 @@
+[0.013s] Invoking command in '/home/turner/yardbot_ws/build/yardbot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/turner/yardbot_ws/build/yardbot_bringup -- -j16 -l16
+[0.039s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.278s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.356s] Error parsing '/home/turner/yardbot_ws/src/yardbot_bringup/package.xml':
+[1.284s] Traceback (most recent call last):
+[1.284s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[1.284s]     main()
+[1.284s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[1.284s]     raise e
+[1.285s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[1.285s]     package = parse_package_string(
+[1.285s]               ^^^^^^^^^^^^^^^^^^^^^
+[1.285s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 630, in parse_package_string
+[1.285s]     pkg.name = _get_node_value(_get_node(root, 'name', filename))
+[1.285s]                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.285s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 800, in _get_node
+[1.285s]     raise InvalidPackage('The manifest must contain exactly one "%s" tag' % tagname, filename)
+[1.285s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/turner/yardbot_ws/src/yardbot_bringup/package.xml':
+[1.285s] The manifest must contain exactly one "name" tag
+[1.323s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.324s]   execute_process(/usr/bin/python3
+[1.324s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.324s]   /home/turner/yardbot_ws/src/yardbot_bringup/package.xml
+[1.324s]   /home/turner/yardbot_ws/build/yardbot_bringup/ament_cmake_core/package.cmake)
+[1.324s]   returned error code 1
+[1.324s] Call Stack (most recent call first):
+[1.324s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.324s]   /opt/ros/jazzy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.324s]   CMakeLists.txt:23 (ament_lint_auto_find_test_dependencies)
+[1.324s] 
+[1.325s] [0m
+[1.325s] -- Configuring incomplete, errors occurred!
+[1.326s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.329s] Invoked command in '/home/turner/yardbot_ws/build/yardbot_bringup' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/turner/yardbot_ws/build/yardbot_bringup -- -j16 -l16

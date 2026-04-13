@@ -1,0 +1,16 @@
+running egg_info
+creating ../../build/yardbot_bringup/yardbot_bringup.egg-info
+writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/turner/yardbot_ws/install/yardbot_bringup/share
+creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index
+creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index
+creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index/packages

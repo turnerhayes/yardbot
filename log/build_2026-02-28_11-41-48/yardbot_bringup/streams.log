@@ -1,0 +1,25 @@
+[0.768s] Invoking command in '/home/turner/yardbot_ws/src/yardbot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data
+[0.947s] running egg_info
+[0.959s] writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+[0.960s] writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+[0.960s] writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt
+[0.960s] writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+[0.960s] writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+[0.986s] reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.987s] writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.987s] running build
+[0.987s] running build_py
+[0.987s] copying yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+[0.987s] running install
+[0.991s] running install_lib
+[1.004s] copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+[1.004s] byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/depth_to_grid_node.py to depth_to_grid_node.cpython-312.pyc
+[1.006s] running install_data
+[1.006s] copying launch/tags_bringup.launch.py -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/launch
+[1.006s] running install_egg_info
+[1.020s] removing '/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.0.0-py3.12.egg-info' (and everything under it)
+[1.021s] Copying ../../build/yardbot_bringup/yardbot_bringup.egg-info to /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.0.0-py3.12.egg-info
+[1.021s] running install_scripts
+[1.111s] Installing depth_to_grid script to /home/turner/yardbot_ws/install/yardbot_bringup/lib/yardbot_bringup
+[1.111s] writing list of installed files to '/home/turner/yardbot_ws/build/yardbot_bringup/install.log'
+[1.130s] Invoked command in '/home/turner/yardbot_ws/src/yardbot_bringup' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data

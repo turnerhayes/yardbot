@@ -1,0 +1,36 @@
+running egg_info
+writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt
+writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+running build
+running build_py
+copying yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+copying yardbot_bringup/apriltag_detector_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+copying yardbot_bringup/__init__.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+copying yardbot_bringup/qos_relay_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+running install
+running install_lib
+copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/apriltag_detector_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/__init__.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/qos_relay_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/depth_to_grid_node.py to depth_to_grid_node.cpython-312.pyc
+byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/apriltag_detector_node.py to apriltag_detector_node.cpython-312.pyc
+byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/qos_relay_node.py to qos_relay_node.cpython-312.pyc
+running install_data
+copying resource/yardbot_bringup -> /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index/packages
+copying package.xml -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup
+copying launch/tags_bringup.launch.py -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/launch
+creating /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/config
+copying config/apriltag_qos.yaml -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/config
+running install_egg_info
+Copying ../../build/yardbot_bringup/yardbot_bringup.egg-info to /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info
+running install_scripts
+Installing depth_to_grid script to /home/turner/yardbot_ws/install/yardbot_bringup/bin
+Installing qos_relay script to /home/turner/yardbot_ws/install/yardbot_bringup/bin
+writing list of installed files to '/home/turner/yardbot_ws/build/yardbot_bringup/install.log'

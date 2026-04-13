@@ -1,0 +1,2 @@
+Invoking command in '/home/turner/yardbot_ws/build/yardbot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/turner/yardbot_ws/build/yardbot_bringup -- -j16 -l16
+Invoked command in '/home/turner/yardbot_ws/build/yardbot_bringup' returned '2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/cmake --build /home/turner/yardbot_ws/build/yardbot_bringup -- -j16 -l16

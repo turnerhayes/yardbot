@@ -1,0 +1,38 @@
+[0.713s] Invoking command in '/home/turner/yardbot_ws/src/yardbot_bringup': CMAKE_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data
+[0.889s] running egg_info
+[0.902s] writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+[0.902s] writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+[0.902s] writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt
+[0.902s] writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+[0.902s] writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+[0.929s] reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.929s] writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.930s] running build
+[0.930s] running build_py
+[0.930s] copying yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+[0.930s] copying yardbot_bringup/apriltag_detector_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+[0.930s] copying yardbot_bringup/__init__.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+[0.930s] copying yardbot_bringup/qos_relay_node.py -> /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup
+[0.930s] running install
+[0.935s] running install_lib
+[0.948s] copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/depth_to_grid_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+[0.949s] copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/apriltag_detector_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+[0.949s] copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/__init__.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+[0.949s] copying /home/turner/yardbot_ws/build/yardbot_bringup/build/lib/yardbot_bringup/qos_relay_node.py -> /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup
+[0.949s] byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/depth_to_grid_node.py to depth_to_grid_node.cpython-312.pyc
+[0.950s] byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/apriltag_detector_node.py to apriltag_detector_node.cpython-312.pyc
+[0.952s] byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/__init__.py to __init__.cpython-312.pyc
+[0.953s] byte-compiling /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup/qos_relay_node.py to qos_relay_node.cpython-312.pyc
+[0.953s] running install_data
+[0.953s] copying resource/yardbot_bringup -> /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index/packages
+[0.953s] copying package.xml -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup
+[0.953s] copying launch/tags_bringup.launch.py -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/launch
+[0.953s] creating /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/config
+[0.953s] copying config/apriltag_qos.yaml -> /home/turner/yardbot_ws/install/yardbot_bringup/share/yardbot_bringup/config
+[0.953s] running install_egg_info
+[0.968s] Copying ../../build/yardbot_bringup/yardbot_bringup.egg-info to /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info
+[0.968s] running install_scripts
+[1.059s] Installing depth_to_grid script to /home/turner/yardbot_ws/install/yardbot_bringup/bin
+[1.059s] Installing qos_relay script to /home/turner/yardbot_ws/install/yardbot_bringup/bin
+[1.059s] writing list of installed files to '/home/turner/yardbot_ws/build/yardbot_bringup/install.log'
+[1.077s] Invoked command in '/home/turner/yardbot_ws/src/yardbot_bringup' returned '0': CMAKE_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data

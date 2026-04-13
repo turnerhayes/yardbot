@@ -1,0 +1,15 @@
+/apriltag:
+  ros__parameters:
+    qos_overrides:
+      /camera/camera/color/image_raw:
+        subscription:
+          reliability: reliable
+          durability: volatile
+          history: keep_last
+          depth: 5
+      /camera/camera/color/camera_info:
+        subscription:
+          reliability: reliable
+          durability: volatile
+          history: keep_last
+          depth: 5

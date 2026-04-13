@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: yardbot-bringup
+Version: 0.1.0
+Summary: Bringup launch files and nodes for Yardbot
+Maintainer: Yardbot
+Maintainer-email: todo@todo.com
+License: MIT

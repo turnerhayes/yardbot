@@ -1,0 +1,19 @@
+[0.646s] Invoking command in '/home/turner/yardbot_ws/src/yardbot_bringup': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data
+[0.830s] running egg_info
+[0.831s] creating ../../build/yardbot_bringup/yardbot_bringup.egg-info
+[0.845s] writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+[0.846s] writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+[0.846s] writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+[0.846s] writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+[0.846s] writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.860s] reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.860s] writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.860s] running build
+[0.860s] running install
+[0.866s] running install_data
+[0.866s] creating /home/turner/yardbot_ws/install/yardbot_bringup/share
+[0.866s] creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index
+[0.866s] creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index
+[0.866s] creating /home/turner/yardbot_ws/install/yardbot_bringup/share/ament_index/resource_index/packages
+[0.867s] error: can't copy 'resource/yardbot_bringup': doesn't exist or not a regular file
+[0.883s] Invoked command in '/home/turner/yardbot_ws/src/yardbot_bringup' returned '1': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data

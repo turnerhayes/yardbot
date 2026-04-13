@@ -1,0 +1,5 @@
+[console_scripts]
+apriltag_overlay = yardbot_bringup.apriltag_overlay_node:main
+depth_to_grid = yardbot_bringup.depth_to_grid_node:main
+qos_relay = yardbot_bringup.qos_relay_node:main
+sabertooth_node = yardbot_bringup.sabertooth_node:main

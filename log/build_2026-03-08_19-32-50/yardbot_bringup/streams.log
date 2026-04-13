@@ -1,0 +1,22 @@
+[0.559s] Invoking command in '/home/turner/yardbot_ws/src/yardbot_bringup': AMENT_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data
+[0.740s] running egg_info
+[0.753s] writing ../../build/yardbot_bringup/yardbot_bringup.egg-info/PKG-INFO
+[0.753s] writing dependency_links to ../../build/yardbot_bringup/yardbot_bringup.egg-info/dependency_links.txt
+[0.753s] writing entry points to ../../build/yardbot_bringup/yardbot_bringup.egg-info/entry_points.txt
+[0.754s] writing requirements to ../../build/yardbot_bringup/yardbot_bringup.egg-info/requires.txt
+[0.754s] writing top-level names to ../../build/yardbot_bringup/yardbot_bringup.egg-info/top_level.txt
+[0.780s] reading manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.781s] writing manifest file '../../build/yardbot_bringup/yardbot_bringup.egg-info/SOURCES.txt'
+[0.781s] running build
+[0.781s] running build_py
+[0.781s] running install
+[0.786s] running install_lib
+[0.800s] running install_data
+[0.800s] running install_egg_info
+[0.814s] removing '/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info' (and everything under it)
+[0.815s] Copying ../../build/yardbot_bringup/yardbot_bringup.egg-info to /home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages/yardbot_bringup-0.1.0-py3.12.egg-info
+[0.816s] running install_scripts
+[0.909s] Installing depth_to_grid script to /home/turner/yardbot_ws/install/yardbot_bringup/bin
+[0.909s] Installing qos_relay script to /home/turner/yardbot_ws/install/yardbot_bringup/bin
+[0.909s] writing list of installed files to '/home/turner/yardbot_ws/build/yardbot_bringup/install.log'
+[0.935s] Invoked command in '/home/turner/yardbot_ws/src/yardbot_bringup' returned '0': AMENT_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy CMAKE_PREFIX_PATH=/home/turner/yardbot_ws/install/yardbot_description:/home/turner/yardbot_ws/install/yardbot_bringup:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/turner/yardbot_ws/build/yardbot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/turner/yardbot_ws/install/yardbot_bringup/lib/python3.12/site-packages:/home/turner/yardbot_ws/install/yardbot_description/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yardbot_bringup build --build-base /home/turner/yardbot_ws/build/yardbot_bringup/build install --record /home/turner/yardbot_ws/build/yardbot_bringup/install.log --single-version-externally-managed install_data

@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ros2 topic info /camera/camera/color/image_raw --verbose)"
+    ]
+  }
+}

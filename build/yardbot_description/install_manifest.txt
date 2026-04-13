@@ -1,0 +1,15 @@
+/home/turner/yardbot_ws/install/yardbot_description/share/ament_index/resource_index/package_run_dependencies/yardbot_description
+/home/turner/yardbot_ws/install/yardbot_description/share/ament_index/resource_index/parent_prefix_path/yardbot_description
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/environment/ament_prefix_path.sh
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/environment/ament_prefix_path.dsv
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/environment/path.sh
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/environment/path.dsv
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/local_setup.bash
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/local_setup.sh
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/local_setup.zsh
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/local_setup.dsv
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/package.dsv
+/home/turner/yardbot_ws/install/yardbot_description/share/ament_index/resource_index/packages/yardbot_description
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/cmake/yardbot_descriptionConfig.cmake
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/cmake/yardbot_descriptionConfig-version.cmake
+/home/turner/yardbot_ws/install/yardbot_description/share/yardbot_description/package.xml
