@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 import math
-from typing import Optional, Tuple
+from typing import cast
 
 import numpy as np
 
 import rclpy
 from rclpy.node import Node
+from rclpy.duration import Duration
 
 from sensor_msgs.msg import Image, CameraInfo
 from nav_msgs.msg import OccupancyGrid
@@ -14,7 +15,7 @@ from geometry_msgs.msg import TransformStamped
 from cv_bridge import CvBridge
 
 import tf2_ros
-from tf2_ros import TransformException
+from tf2_ros import TransformException # pyright: ignore[reportAttributeAccessIssue]
 
 from message_filters import Subscriber, ApproximateTimeSynchronizer
 
@@ -81,8 +82,8 @@ class DepthToGridNode(Node):
 
         self.grid_pub = self.create_publisher(OccupancyGrid, "occupancy", 10)
 
-        depth_topic = self.get_parameter("depth_topic").value
-        info_topic = self.get_parameter("camera_info_topic").value
+        depth_topic = cast(str, self.get_parameter("depth_topic").value)
+        info_topic = cast(str, self.get_parameter("camera_info_topic").value)
 
         self.depth_sub = Subscriber(self, Image, depth_topic)
         self.info_sub = Subscriber(self, CameraInfo, info_topic)
@@ -97,14 +98,14 @@ class DepthToGridNode(Node):
         self.get_logger().info("DepthToGridNode started.")
 
     def cb(self, depth_msg: Image, info_msg: CameraInfo) -> None:
-        target_frame = self.get_parameter("target_frame").value
+        target_frame = cast(str, self.get_parameter("target_frame").value)
 
         try:
             tf = self.tf_buffer.lookup_transform(
                 target_frame,
                 depth_msg.header.frame_id,
-                rclpy.time.Time(),
-                timeout=rclpy.duration.Duration(seconds=0.1)
+                self.get_clock().now(),
+                timeout=Duration(seconds=0.1)
             )
         except TransformException as ex:
             self.get_logger().warn(f"TF lookup failed: {ex}")
@@ -128,7 +129,7 @@ class DepthToGridNode(Node):
             # assume already meters for 32FC1
             depth_m = depth.astype(np.float32)
 
-        stride = int(self.get_parameter("stride").value)
+        stride = cast(int, self.get_parameter("stride").value)
         depth_s = depth_m[::stride, ::stride]
         h, w = depth_s.shape
 
@@ -138,8 +139,8 @@ class DepthToGridNode(Node):
         uu, vv = np.meshgrid(us, vs)
 
         z = depth_s
-        min_r = float(self.get_parameter("min_range_m").value)
-        max_r = float(self.get_parameter("max_range_m").value)
+        min_r = cast(float, self.get_parameter("min_range_m").value)
+        max_r = cast(float, self.get_parameter("max_range_m").value)
 
         valid = np.isfinite(z) & (z > min_r) & (z < max_r)
         if not np.any(valid):
@@ -158,25 +159,25 @@ class DepthToGridNode(Node):
         pts = apply_tf(tf, pts_cam)
 
         # Height filtering in target frame
-        zmin = float(self.get_parameter("z_min_m").value)
-        zmax = float(self.get_parameter("z_max_m").value)
+        zmin = cast(float, self.get_parameter("z_min_m").value)
+        zmax = cast(float, self.get_parameter("z_max_m").value)
         keep = (pts[:, 2] >= zmin) & (pts[:, 2] <= zmax)
         pts = pts[keep]
         if pts.shape[0] == 0:
             return
 
         # Create grid
-        res = float(self.get_parameter("resolution").value)
-        width_m = float(self.get_parameter("width_m").value)
-        height_m = float(self.get_parameter("height_m").value)
-        origin_x = float(self.get_parameter("origin_x_m").value)
-        origin_y = float(self.get_parameter("origin_y_m").value)
+        res = cast(float, self.get_parameter("resolution").value)
+        width_m = cast(float, self.get_parameter("width_m").value)
+        height_m = cast(float, self.get_parameter("height_m").value)
+        origin_x = cast(float, self.get_parameter("origin_x_m").value)
+        origin_y = cast(float, self.get_parameter("origin_y_m").value)
 
         grid_w = int(math.ceil(width_m / res))
         grid_h = int(math.ceil(height_m / res))
 
-        unknown = int(self.get_parameter("unknown_value").value)
-        occ_val = int(self.get_parameter("occ_value").value)
+        unknown = cast(int, self.get_parameter("unknown_value").value)
+        occ_val = cast(int, self.get_parameter("occ_value").value)
 
         grid = np.full((grid_h, grid_w), unknown, dtype=np.int8)
 

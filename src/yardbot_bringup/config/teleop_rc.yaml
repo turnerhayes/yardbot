@@ -1,0 +1,21 @@
+# config/teleop_rc.yaml
+teleop_twist_joy_node:
+  ros__parameters:
+    # Axis mapping -- matches Joy message axes[] from rc_joy_node
+    axis_linear:
+      x: 0        # ch1 (throttle) -> forward/back
+    axis_angular:
+      yaw: 1      # ch2 (steering) -> left/right turn
+
+    # Scale factors -- tune these once robot is on the ground
+    scale_linear:
+      x: 0.3      # max 0.3 m/s, matches your Nav2 conservative setting
+    scale_angular:
+      yaw: 0.8    # max 0.8 rad/s, tune to taste
+
+    # Enable button -- Joy button 0 must be 1 (motors enabled)
+    # When E-stop triggered, button 0 = 0, robot stops
+    enable_button: 0
+
+    # No turbo for now
+    enable_turbo_button: -1

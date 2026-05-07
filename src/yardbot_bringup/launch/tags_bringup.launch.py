@@ -106,24 +106,7 @@ def generate_launch_description():
         }.items(),
     )
 
-    # ── 3a. QoS relay ─────────────────────────────────────────────────────
-    # The RealSense publishes image_raw as RELIABLE + KEEP_LAST(1).  FastDDS
-    # silently drops messages to BEST_EFFORT subscribers from such publishers.
-    # This relay subscribes RELIABLY (so it receives every frame) and
-    # republishes as BEST_EFFORT (compatible with apriltag_ros's image_transport
-    # subscription).
-    qos_relay = Node(
-        package="yardbot_bringup",
-        executable="qos_relay",
-        name="qos_relay",
-        output="screen",
-        remappings=[
-            ("~/in/image",       image_rect_topic),
-            ("~/in/camera_info", camera_info_topic),
-        ],
-    )
-
-    # ── 3b. AprilTag detector ─────────────────────────────────────────────
+    # ── 3. AprilTag detector ─────────────────────────────────────────────
     apriltag_node = Node(
         package="apriltag_ros",
         executable="apriltag_node",
@@ -174,7 +157,6 @@ def generate_launch_description():
 
         description_launch,
         realsense_launch,
-        qos_relay,
         TimerAction(period=3.0, actions=[apriltag_node]),
         depth_to_grid_node,
     ])

@@ -1,0 +1,5 @@
+sabertooth_node:
+  ros__parameters:
+    baud_rate:   9600,
+    max_linear_velocity: 0.2 # Maximum linear velocity in m/s
+    max_angular_velocity: 1.0  # Maximum angular velocity in rad/s

@@ -4,7 +4,7 @@
   <name>yardbot_bringup</name>
   <version>0.1.0</version>
   <description>Bringup launch files and nodes for Yardbot</description>
-  <maintainer email="turner@todo.todo">turner</maintainer>
+  <maintainer email="dev@turnerhayes.com">Turner Hayes</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_python</buildtool_depend>

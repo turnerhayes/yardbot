@@ -19,8 +19,8 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="Yardbot",
-    maintainer_email="todo@todo.com",
+    maintainer="Turner Hayes",
+    maintainer_email="dev@turnerhayes.com",
     description="Bringup launch files and nodes for Yardbot",
     license="MIT",
     entry_points={
@@ -29,6 +29,9 @@ setup(
             "qos_relay     = yardbot_bringup.qos_relay_node:main",
             "apriltag_overlay = yardbot_bringup.apriltag_overlay_node:main",
             "sabertooth_node = yardbot_bringup.sabertooth_node:main",
+            "sabertooth_temp_node = yardbot_bringup.sabertooth_temp_node:main",
+            "fence_boundary = yardbot_bringup.fence_boundary_node:main",
+            "rc_teleop_node = yardbot_bringup.rc_teleop_node:main",
         ],
     },
 )

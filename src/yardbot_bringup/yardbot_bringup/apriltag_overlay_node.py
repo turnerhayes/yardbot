@@ -24,6 +24,8 @@ Dependencies:
   python3-numpy
 """
 
+from typing import cast
+
 import rclpy
 from rclpy.node import Node
 from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
@@ -70,14 +72,14 @@ class AprilTagOverlayNode(Node):
         # tag size so the polygon fits the tag precisely.
         self.declare_parameter('tag_half_size', 0.08)
 
-        image_topic        = self.get_parameter('image_topic').value
-        camera_info_topic  = self.get_parameter('camera_info_topic').value
-        detections_topic   = self.get_parameter('detections_topic').value
-        output_topic       = self.get_parameter('output_topic').value
-        self._thickness    = self.get_parameter('line_thickness').value
-        self._font_scale   = self.get_parameter('font_scale').value
-        self._corner_r     = self.get_parameter('corner_radius').value
-        self._half_size    = self.get_parameter('tag_half_size').value
+        image_topic        = cast(str, self.get_parameter('image_topic').value)
+        camera_info_topic  = cast(str, self.get_parameter('camera_info_topic').value)
+        detections_topic   = cast(str, self.get_parameter('detections_topic').value)
+        output_topic       = cast(str, self.get_parameter('output_topic').value)
+        self._thickness    = cast(int, self.get_parameter('line_thickness').value)
+        self._font_scale   = cast(float, self.get_parameter('font_scale').value)
+        self._corner_r     = cast(int, self.get_parameter('corner_radius').value)
+        self._half_size    = cast(float, self.get_parameter('tag_half_size').value)
 
         self._bridge = CvBridge()
         self._camera_info: CameraInfo | None = None

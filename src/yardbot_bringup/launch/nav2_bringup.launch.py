@@ -29,13 +29,11 @@ from launch.actions import (
     DeclareLaunchArgument,
     IncludeLaunchDescription,
     TimerAction,
-    GroupAction,
 )
 from launch.conditions import IfCondition, UnlessCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-from launch_ros.actions import Node, PushRosNamespace
-from launch_ros.substitutions import FindPackageShare
+from launch.substitutions import LaunchConfiguration
+from launch_ros.actions import Node
 
 
 def generate_launch_description():
@@ -135,11 +133,12 @@ def generate_launch_description():
         executable="sabertooth_node",
         name="sabertooth",
         output="screen",
-        parameters=[{
-            "serial_port": serial_port,
-            "baud_rate":   9600,
-            "max_speed":   30,       # Sabertooth 0-127 value at max_linear_vel
-        }],
+        parameters=[
+            os.path.join(bringup_dir, "config", "sabertooth_node_params.yaml"),
+            {
+                "serial_port": serial_port,
+            }
+        ],
         remappings=[
             ("cmd_vel", "cmd_vel"),  # Nav2 → velocity_smoother → collision_monitor → here
         ],
@@ -185,6 +184,22 @@ def generate_launch_description():
             "node_names":   ["map_server"],
         }],
     )
+    
+    fence_boundary_map = Node(
+        package="yardbot_bringup",
+        executable="fence_boundary",
+        name="fence_boundary",
+        output="screen",
+    )
+    
+    
+    # ── 5. teleop_rc (RC controller nodes) ─────
+    rc_bringup = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(bringup_dir, "launch", "teleop_rc.launch.py")
+        ),
+    )
+
 
     return LaunchDescription([
         # Arguments
@@ -194,6 +209,7 @@ def generate_launch_description():
 
         # Bringup in order, with delays to let each layer stabilise
         tags_bringup,                                   # t=0  sensors + TF
+        rc_bringup,                                     # t=0  RC controller nodes
         TimerAction(period=3.0, actions=[              # t=3  RTAB-Map
             rtabmap_slam,
             rtabmap_odom,
@@ -205,5 +221,6 @@ def generate_launch_description():
             nav2_launch,
             map_server,
             lifecycle_manager_map,
+            fence_boundary_map,
         ]),
     ])
